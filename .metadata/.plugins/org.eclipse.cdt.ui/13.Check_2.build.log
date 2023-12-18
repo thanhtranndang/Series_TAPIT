@@ -1,0 +1,10 @@
+16:46:43 **** Build of configuration Debug for project 13.Check_2 ****
+make -j8 all 
+arm-none-eabi-size   13.Check_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7752	     20	   1644	   9416	   24c8	13.Check_2.elf
+Finished building: default.size.stdout
+ 
+
+16:46:43 Build Finished. 0 errors, 0 warnings. (took 254ms)
+

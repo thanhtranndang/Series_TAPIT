@@ -1,0 +1,10 @@
+23:13:08 **** Incremental Build of configuration Debug for project 17. BigEx ****
+make -j8 all 
+arm-none-eabi-size   17.\ BigEx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8424	     20	   1644	  10088	   2768	17. BigEx.elf
+Finished building: default.size.stdout
+ 
+
+23:13:08 Build Finished. 0 errors, 0 warnings. (took 198ms)
+

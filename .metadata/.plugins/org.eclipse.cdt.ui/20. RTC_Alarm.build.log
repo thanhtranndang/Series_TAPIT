@@ -1,0 +1,10 @@
+21:50:27 **** Incremental Build of configuration Debug for project 20. RTC_Alarm ****
+make -j8 all 
+arm-none-eabi-size   20.\ RTC_Alarm.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7624	     20	   1604	   9248	   2420	20. RTC_Alarm.elf
+Finished building: default.size.stdout
+ 
+
+21:50:27 Build Finished. 0 errors, 0 warnings. (took 244ms)
+

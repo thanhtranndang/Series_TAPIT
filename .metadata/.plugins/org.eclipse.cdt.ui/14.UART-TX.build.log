@@ -1,0 +1,25 @@
+14:20:53 **** Incremental Build of configuration Debug for project 14.UART-TX ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:43: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  127 |           sprintf(count_str, "Count:%.3d\n", count);    /* USER CODE END WHILE */
+      |                                           ^
+../Core/Src/main.c:127:11: note: 'sprintf' output 11 bytes into a destination of size 10
+  127 |           sprintf(count_str, "Count:%.3d\n", count);    /* USER CODE END WHILE */
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "14.UART-TX.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded Driver Development\TAPIT\14.UART-TX\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14.UART-TX.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14.UART-TX.elf
+ 
+arm-none-eabi-size   14.UART-TX.elf 
+arm-none-eabi-objdump -h -S  14.UART-TX.elf  > "14.UART-TX.list"
+   text	   data	    bss	    dec	    hex	filename
+  23212	    480	   1984	  25676	   644c	14.UART-TX.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14.UART-TX.list
+ 
+
+14:20:54 Build Finished. 0 errors, 1 warnings. (took 704ms)
+

@@ -1,0 +1,6 @@
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:7:10:RTC_BCD2DEC	1
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:11:10:RTC_DEC2BCD	1
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:16:7:I2C_WriteBuffer	3
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:25:7:I2C_ReadBuffer	3
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:34:7:RTC_GetTime	2
+../Drivers/STM32F4xx_HAL_Driver/Src/ds1307.c:53:7:RTC_SetTime	1

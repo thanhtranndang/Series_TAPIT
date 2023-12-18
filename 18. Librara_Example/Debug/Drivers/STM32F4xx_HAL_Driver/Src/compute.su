@@ -1,0 +1,2 @@
+../Drivers/STM32F4xx_HAL_Driver/Src/compute.c:4:5:sum	16	static
+../Drivers/STM32F4xx_HAL_Driver/Src/compute.c:8:5:subtract	16	static

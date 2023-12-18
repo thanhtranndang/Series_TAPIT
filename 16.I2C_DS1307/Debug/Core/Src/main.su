@@ -1,0 +1,13 @@
+../Core/Src/main.c:82:10:RTC_BCD2DEC	16	static
+../Core/Src/main.c:86:10:RTC_DEC2BCD	16	static
+../Core/Src/main.c:91:7:I2C_WriteBuffer	16	static
+../Core/Src/main.c:100:7:I2C_ReadBuffer	16	static
+../Core/Src/main.c:108:7:RTC_GetTime	96	static
+../Core/Src/main.c:127:7:RTC_SetTime	104	static
+../Core/Src/main.c:145:5:main	24	static
+../Core/Src/main.c:193:6:SystemClock_Config	88	static
+../Core/Src/main.c:235:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:269:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:302:13:MX_GPIO_Init	16	static
+../Core/Src/main.c:324:1:__io_putchar	16	static
+../Core/Src/main.c:334:6:Error_Handler	4	static,ignoring_inline_asm

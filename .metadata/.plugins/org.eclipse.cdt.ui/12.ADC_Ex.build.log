@@ -1,0 +1,17 @@
+11:08:56 **** Build of configuration Debug for project 12.ADC_Ex ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "12.ADC_Ex.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded Driver Development\TAPIT\12.ADC_Ex\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12.ADC_Ex.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12.ADC_Ex.elf
+ 
+arm-none-eabi-size   12.ADC_Ex.elf 
+arm-none-eabi-objdump -h -S  12.ADC_Ex.elf  > "12.ADC_Ex.list"
+   text	   data	    bss	    dec	    hex	filename
+   9768	     20	   1716	  11504	   2cf0	12.ADC_Ex.elf
+Finished building: default.size.stdout
+ 
+Finished building: 12.ADC_Ex.list
+ 
+
+11:08:57 Build Finished. 0 errors, 0 warnings. (took 915ms)
+

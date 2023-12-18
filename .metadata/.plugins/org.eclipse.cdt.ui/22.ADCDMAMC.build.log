@@ -1,0 +1,10 @@
+16:34:48 **** Incremental Build of configuration Debug for project 22.ADCDMAMC ****
+make -j8 all 
+arm-none-eabi-size   22.ADCDMAMC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     20	   1740	  11784	   2e08	22.ADCDMAMC.elf
+Finished building: default.size.stdout
+ 
+
+16:34:48 Build Finished. 0 errors, 0 warnings. (took 198ms)
+
